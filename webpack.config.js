@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './index.html',
+      template: path.resolve(__dirname, 'public', 'index.html'),
       chunks: ['app'],
       minify: {
         collapseWhitespace: true
